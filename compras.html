@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUNDO FIT-COMPRAR</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="shortcut icon" href="/imagenes/pesas.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/af57acd710.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- enlace libreria animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- enlace a css boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    >
+  </head>
+  <body>
+    <header class="titulo">
+      <h1>
+        <i
+          class="fa-sharp fa-solid fa-dumbbell"
+          style="font-size: 20px; color: rgb(0, 0, 0); margin-right: 15px"
+        ></i
+        >MUNDO FIT<i
+          class="fa-sharp fa-solid fa-dumbbell"
+          style="font-size: 20px; color: rgb(0, 0, 0); margin-left: 15px"
+        ></i>
+      </h1>
+    </header>
+
+    <main>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html"
+            ><i class="fa-sharp fa-solid fa-house" style="margin-right: 5px"></i
+            >INICIO</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/contactenos.html"
+                  ><i
+                    class="fa-solid fa-envelope-open"
+                    style="margin-right: 5px"
+                  ></i
+                  >CONTACTENOS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/compras.html"
+                  ><i
+                    class="fa-sharp fa-solid fa-cart-shopping"
+                    style="margin-right: 5px"
+                  ></i
+                  >TIENDA</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Buscar"
+              />
+              <button class="btn btn-dark" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="inicio">
+        <h2 class="titulo-h2 animate__animated animate__backInLeft animate__slow">COMPRAS</h2>
+      </div>
+      <br />
+
+      <!-- PONER UNA TABLA CON NOTAS SOBRE LOS ENVIOS -->
+      <div class="table table-dark table-striped tabla-compras">
+        <table>
+          <thead>
+            <th colspan="2">NOTAS IMPORTANTES SOBRE LOS ENVIOS</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Los envíos tardan un aproximado de 4-5 dias en llegar</td>
+              <td>
+                Esto debido a que el envio a correos CR se realiza el día
+                siguiente y en correos tardan entre 3-4 días
+              </td>
+            </tr>
+
+            <tr>
+              <td>Los suplementos no tienen garantía ya que vienen sellados</td>
+              <td>Solo en caso de que esten vencidos</td>
+            </tr>
+
+            <tr>
+              <td colspan="2">Los accesorios tienen garantía de un mes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        <form id="formulario" class="formulario" action="">
+          <legend class="formulario__legend">
+            INGRESE SUS DATOS PERSONALES:
+          </legend>
+
+          <div class="">
+            <label class="formulario__label" for="nombre"
+              >INGRESE SU NOMBRE:</label
+            >
+            <input
+              class="formulario__input formulario__input-nombre-apellido"
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Pepe"
+              autofocus
+            />
+            <p
+              id="parrafo_nombre"
+              class="formulario__indicaciones formulario__indicaciones-desactivado"
+            >
+              No se permiten caracteres especiales
+            </p>
+          </div>
+          <div class="">
+            <label class="formulario__label" for="apellidos"
+              >INGRESE SUS APELLIDOS:</label
+            >
+            <input
+              class="formulario__input formulario__input-nombre-apellido"
+              type="text"
+              id="apellidos"
+              name="apellidos"
+              placeholder="Solis Solis"
+            />
+            <p
+              id="parrafo_apellidos"
+              class="formulario__indicaciones formulario__indicaciones-desactivado"
+            >
+              No se permiten caracteres especiales
+            </p>
+          </div>
+          <div>
+            <label class="formulario__label" for="direccion"
+              >INGRESE LA DIRECCIÓN:</label
+            >
+            <br />
+            <input
+              class="formulario__input"
+              type="text"
+              id="direccion"
+              placeholder="PROVINCIA-CANTÓN-DIRECCIÓN EXACTA"
+              name="direccion"
+            />
+            <p
+              id="parrafo_direccion"
+              class="formulario__indicaciones formulario__indicaciones-desactivado"
+            >
+              Ingrese la dirección exacta
+            </p>
+          </div>
+
+          <div>
+            <label class="formulario__label" for="compra"
+              >ESCOJA EL SUPLEMENTO-ACCESORIO QUE DESEA COMPRAR:</label
+            >
+            <select class="formulario__select" name="" id="compra">
+              <optgroup label="PROTEINAS">
+                <option value="ISOFLEX">ISOFLEX-ALL MAX NUTRITION</option>
+                <option value="ISO100">ISO100-DYMATIZE</option>
+                <option value="ISO_SENSATION_93">
+                  ULTIMATE NUTRITION ISO SENSATION 93
+                </option>
+                <option value="CARNIVOR_MUSCLEMEDS">CARNIVOR-MUSCLEMEDS</option>
+              </optgroup>
+              <optgroup label="CREATINAS">
+                <option value="CREATINE_ALL_MAX">CREATINE ALL MAX</option>
+                <option value="CREATINE_SAN_PERFORMANCE">
+                  CREATINE SAN PERFORMANCE
+                </option>
+                <option value="CREATIEN_ULTIMATE NUTRITION">
+                  CREATIEN ULTIMATE NUTRITION
+                </option>
+                <option value="CREATINE_RSP">CREATINE RSP</option>
+              </optgroup>
+              <optgroup label="AMINOÁCIDOS">
+                <option value="AMINOLEAN_RSP">AMINOLEAN RSP</option>
+                <option value="AMINO_X">AMINO X</option>
+                <option value="AMINOCORE_BCAA">AMINOCORE BCAA</option>
+                <option value="AMINO_ENERGY">
+                  AMINO ENERGY OPTIMUM NUTRITION
+                </option>
+              </optgroup>
+              <optgroup label="PRE-ENTRENOS">
+                <option value="TOTAL_WAR">TOTAL WAR</option>
+                <option value="C4">C4</option>
+                <option value="RHINO_RAMPAGE">RHINO RAMPAGE</option>
+                <option value="MAGNUM_VOLUME">MAGNUM VOLUME</option>
+              </optgroup>
+              <optgroup label="MULTIVITAMÍNICOS">
+                <option value="VITAFORM_HOMBRE">VITAFORM HOMBRE</option>
+                <option value="UNIVERSAL_ANIMAL PAK">
+                  UNIVERSAL ANIMAL PAK
+                </option>
+                <option value="VITAFORM_MUJER">VITAFORM MUJER</option>
+                <option value="JYM_VITA">JYM VITA</option>
+              </optgroup>
+              <optgroup label="FAJAS">
+                <option value="FAJA_US_MUSCLE_DIVISION_BACK">
+                  FAJA US MUSCLE DIVISION BACK
+                </option>
+                <option value="FAJA_REEBOK">FAJA REEBOK</option>
+                <option value="FAJA_EXOUS">FAJA EXOUS</option>
+                <option value="FAJA_GORILA">FAJA GORILA</option>
+              </optgroup>
+              <optgroup label="STRAPS">
+                <option value="STRAPS_HILAEX">STRAPS HILAEX</option>
+                <option value="STRAPS_XPLORE">STRAPS XPLORE</option>
+                <option value="STRAPS_RDX">STRAPS RDX</option>
+                <option value="STRAPS_GORILA">STRAPS GORILA</option>
+              </optgroup>
+              <optgroup label="MUÑEQUERAS">
+                <option value="MUÑEQUERA_EVERLAST">MUÑEQUERA EVERLAST</option>
+                <option value="MUÑEQUERA_HUSTLE">MUÑEQUERAS HUSTLE</option>
+                <option value="MUÑEQUERA_TRADY FIT">
+                  MUÑEQUERAS TRADY FIT
+                </option>
+                <option value="MUÑEQUERA_DMOOSE">MUÑEQUERAS DMOOSE</option>
+              </optgroup>
+              <optgroup label="BOTELLAS">
+                <option value="BOTELLA_GRANDE BLANCA">
+                  BOTELLA GRANDE BLANCA
+                </option>
+                <option value="BOTELLA_MULTICOLOR">BOTELLA MULTICOLOR</option>
+                <option value="BOTELLA_GRANDE ROJA">BOTELLA GRANDE ROJA</option>
+                <option value="BOTELLA_SENCILLA">BOTELLA SENCILLA</option>
+              </optgroup>
+              <optgroup label="RODILLERAS">
+                <option value="RODILLERA_NIKE">RODILLERA NIKE</option>
+                <option value="RODILLERA_NO_LIMIT_STORE">
+                  RODILLERA NO LIMIT STORE
+                </option>
+                <option value="RODILLERA_GRAVITY">RODILLERA GRAVITY</option>
+                <option value="RODILLERA_CAMBIVO">RODILLERA CAMBIVO</option>
+              </optgroup>
+            </select>
+          </div>
+
+          
+          <div class="">
+            <p>INGRESE METODO DE PAGO:</p>
+            <br />
+            <div class="formulario-radio">
+              <label class="formulario__label" for="tarjeta">TARJETA</label>
+              <input
+                class="formulario__input formulario__input-radio"
+                type="radio"
+                id="trajeta"
+                value="TARJETA"
+                name="metodo_pago"
+                checked
+              />
+
+              <label class="formulario__label" for="sinpe">SINPE</label>
+              <input
+                class="formulario__input formulario__input-radio"
+                type="radio"
+                id="sinpe"
+                value="SINPE"
+                name="metodo_pago"
+              />
+            </div>
+          </div>
+
+
+          <div>
+            <p>SI SU ELECCIÓN FUE LA BOTELLA SENCILLA ELIJA UN COLOR:</p>
+            <div class="formulario-radio">
+              <label class="formulario__label" for="noSeleccionar"
+                >Sin seleccionar</label
+              >
+              <input
+                class="formulario__input formulario__input-radio"
+                type="radio"
+                id="noSeleccionar"
+                name="color-botella"
+                checked
+              />
+              <label class="formulario__label" for="azul">azul</label>
+              <input
+                class="formulario__input formulario__input-radio"
+                type="radio"
+                id="azul"
+                name="color-botella"
+              />
+              <label class="formulario__label" for="rosado">rosado</label>
+              <input
+                class="formulario__input formulario__input-radio"
+                type="radio"
+                id="rosado"
+                name="color-botella"
+              />
+              <label class="formulario__label" for="naranja">naranja</label>
+              <input
+                class="formulario__input formulario__input-radio"
+                type="radio"
+                id="naranja"
+                name="color-botella"
+              />
+              <label class="formulario__label" for="verde">verde</label>
+              <input
+                class="formulario__input formulario__input-radio"
+                type="radio"
+                id="verde"
+                name="color-botella"
+              />
+            </div>
+          </div>
+
+          <div class="formulario__notas">
+            <label class="formulario__label" for="notas">NOTAS:</label>
+            <textarea
+              name="notas"
+              id="notas"
+              cols="30"
+              rows="10"
+              placeholder="EN CASO DE NECESITAR..."
+            ></textarea>
+          </div>
+
+          <div id="formulario__mensaje" class="formulario__mensaje">
+            <p>Los campos nombre, apellidos y direccion son obligatorios</p>
+          </div>
+          <!-- boton -->
+          <div class="formulario_contenedor-boton">
+            <input class="boton" type="submit" value="enviar" />
+          </div>
+          <div class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+            <p>Formulario enviado exitosamente!</p>
+          </div>
+        </form>
+      </div>
+
+  
+    </main>
+
+    <footer>
+      <div class="pie_pagina_principal">
+        <h3>SOBRE NOSOTROS</h3>
+        <p>
+          Somos una empresa que tenemos como misión brindarle el mejor servicio
+          a nuestros clientes y asegurar la calidad de nuestros
+          productos-accesorios.
+          <br />
+          Encuentranos en nuestras redes como:
+          <br />
+          <a href=""
+            ><img
+              src="https://img.icons8.com/fluency/48/null/instagram-new.png"
+          /></a>
+          <a href=""
+            ><img src="https://img.icons8.com/color/48/null/whatsapp--v1.png"
+          /></a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- enlace a js de boostrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/js/js.js"></script>
+  </body>
+</html>
